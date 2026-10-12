@@ -8,6 +8,12 @@
 ![Build](https://img.shields.io/badge/Build-Prototype-green?style=for-the-badge)
 
 ---
+>[!IMPORTANT]
+>**Hardware Compatibility Notice**+
+>This port is primarily designed and optimized for PlayStation Portable models equipped with **64 MB of RAM, specifically the PSP-2000 and PSP-3000.**
+>Due to the **PSP-1000's limited 32 MB of RAM**, this model may experience significant performance limitations, increased loading times, reduced stability, or compatibility issues.
+>While support for the PSP-1000 is not entirely ruled out, **the PSP-2000 and PSP-3000** are strongly recommended for the best possible experience.
+
 
 ## Overview
 
