@@ -92,6 +92,16 @@ The research and development scope includes:
 
 The ultimate objective is to maintain responsive gameplay while preserving the essential characteristics of an open-world experience.
 
+## Screenshots
+
+Below are screenshots of the current experimental build running on the PlayStation Portable.
+
+<!-- Add your gameplay screenshots here. Example:
+![Gameplay Screenshot 1](screenshots/gameplay-01.png)
+![Gameplay Screenshot 2](screenshots/gameplay-02.png)
+![Multiplayer Freeroam](screenshots/multiplayer.png)
+-->
+
 ## Development Progress
 
 | Feature | Current Status |
@@ -107,14 +117,6 @@ The ultimate objective is to maintain responsive gameplay while preserving the e
 | Public release | Not available |
 
 **Important:** A playable development build does not mean that every feature is complete or that the engine is ready for public distribution.
-
-## Why No Screenshots Yet?
-
-Although the project has reached a playable state, the current version still contains graphical issues, technical limitations, and unfinished systems.
-
-For this reason, screenshots and gameplay videos will not be published until the engine reaches a level of visual and functional quality suitable for a public demonstration.
-
-The priority remains stability, technical development, and gameplay improvements.
 
 ## Project Scope
 
@@ -146,4 +148,4 @@ Nevertheless, the initial results demonstrate the technical potential of the app
 
 *Built for real hardware. Driven by experimentation. Inspired by San Andreas.*
 
-**Development is ongoing. More technical details and demonstrations will be shared when the project is ready.**
+**Development is ongoing. Stay tuned for future updates, gameplay demonstrations, and technical milestones.**
