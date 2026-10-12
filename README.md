@@ -102,31 +102,6 @@ The research and development scope includes:
 
 The ultimate objective is to maintain responsive gameplay while preserving the essential characteristics of an open-world experience.
 
-## Screenshots
-
-Below are screenshots of the current experimental build running on the PlayStation Portable.
-
-<!-- Add your gameplay screenshots here. Example:
-![Gameplay Screenshot 1](screenshots/gameplay-01.png)
-![Gameplay Screenshot 2](screenshots/gameplay-02.png)
-![Multiplayer Freeroam](screenshots/multiplayer.png)
--->
-
-## Development Progress
-
-| Feature | Current Status |
-|---|---|
-| Native PSP execution | Achieved |
-| Experimental playable build | Achieved |
-| Core gameplay implementation | In development |
-| Game asset compatibility | In development |
-| Rendering optimization | In development |
-| Memory and resource optimization | In development |
-| Freeroam multiplayer prototype | Tested on two PSP-3000 consoles |
-| Multiplayer synchronization improvements | Experimental |
-| Public release | Not available |
-
-**Important:** A playable development build does not mean that every feature is complete or that the engine is ready for public distribution.
 
 ## Project Scope
 
