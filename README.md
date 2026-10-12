@@ -1,5 +1,7 @@
 # GTA: San Andreas — PSP Native Engine
 
+>Author: Wenderson Dias | Engine and Conversor
+
 **An experimental native game engine bringing the mechanics and open-world experience of Grand Theft Auto: San Andreas to the PlayStation Portable.**
 
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)
