@@ -1,7 +1,6 @@
-# GTA: San Andreas — PSP Native Engine
+# Woody Portable — PSP Native Engine
 
-
-**An experimental native game engine bringing the mechanics and open-world experience of Grand Theft Auto: San Andreas to the PlayStation Portable.**
+**An experimental native game engine bringing the mechanics and 3D platforming experience of Woody Woodpecker: Escape from Buzz Park to the PlayStation Portable.**
 
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-PSP-blue?style=for-the-badge)
@@ -9,109 +8,107 @@
 ![Build](https://img.shields.io/badge/Build-Prototype-green?style=for-the-badge)
 
 ---
->[!IMPORTANT]
->**Hardware Compatibility Notice**
+> [!IMPORTANT]
+> **Hardware Compatibility Notice**
 >
->This port is primarily designed and optimized for PlayStation Portable models equipped with **64 MB of RAM, specifically the PSP-2000 and PSP-3000.**
+> This port is primarily designed and optimized for PlayStation Portable models equipped with **64 MB of RAM, specifically the PSP-2000 and PSP-3000.**
 >
->Due to the **PSP-1000's limited 32 MB of RAM**, this model may experience significant performance limitations, increased loading times, reduced stability, or compatibility issues.
+> Due to the **PSP-1000's limited 32 MB of RAM**, this model may experience significant performance limitations, increased loading times, reduced stability, or compatibility issues.
 >
->While support for the PSP-1000 is not entirely ruled out, **the PSP-2000 and PSP-3000** are strongly recommended for the best possible experience.
+> While support for the PSP-1000 is not entirely ruled out, **the PSP-2000 and PSP-3000** are strongly recommended for the best possible experience.
 
 
 ## Overview
 
-**GTA: San Andreas — PSP Native Engine** is an independent experimental project focused on developing a native game engine capable of recreating the core gameplay mechanics and open-world experience of *Grand Theft Auto: San Andreas* on original PlayStation Portable hardware.
+**Woody Portable** is an independent experimental project focused on developing a native game engine capable of recreating the core 3D platforming mechanics, level structure, and gameplay experience of *Woody Woodpecker: Escape from Buzz Park* on original PlayStation Portable hardware.
 
-Inspired by the technical approach of projects such as Sandstone, the engine follows a similar logical structure, using an existing PSP game ISO as a foundation for adapting and executing custom game systems.
+Inspired by custom homebrew engine adaptations, the engine follows a modular logical structure, using original game assets as a foundation for adapting and executing custom gameplay systems.
 
-Unlike traditional ports, this project does not aim to reproduce the complete San Andreas storyline.
+Unlike traditional full-game ports, this project does not aim to reproduce the complete original storyline or full cinematic sequences immediately.
 
-Instead, its primary objective is to develop a specialized engine capable of loading game assets, implementing gameplay mechanics, and delivering a playable open-world experience while respecting the PSP's hardware limitations.
+Instead, its primary objective is to develop a specialized engine capable of loading level assets, implementing physics and platformer mechanics, and delivering a smooth, playable experience while respecting the PSP's hardware constraints.
 
 The project has been under development for approximately **six months** and has recently reached an important milestone: **a stable, playable experimental build**.
 
 ## Project Vision
 
-The goal is not simply to make San Andreas run on a PSP.
+The goal is not simply to make *Escape from Buzz Park* run on a PSP.
 
-The goal is to explore how far the original hardware can be pushed through careful software engineering, efficient resource management, and intelligent rendering techniques.
+The goal is to explore how far the original hardware can be pushed through careful software engineering, efficient memory management, and optimized rendering techniques tailored for 3D platformers.
 
 The project focuses on four main areas:
 
 - **Native execution:** Running directly on real PSP hardware without relying on external emulation.
-- **Asset compatibility:** Investigating methods for loading, interpreting, and adapting game assets.
-- **Rendering optimization:** Developing efficient rendering and resource-management techniques suitable for the PSP.
-- **Multiplayer experimentation:** Building a multiplayer environment inspired by San Andreas Multiplayer (SA-MP).
+- **Asset compatibility:** Investigating methods for loading, interpreting, and adapting 3D meshes, textures, and animations.
+- **Rendering optimization:** Developing efficient rendering and resource-management techniques suitable for the PSP hardware.
+- **Multiplayer experimentation:** Building an experimental multiplayer mode for mini-games and co-op exploration.
 
 ## Engine Architecture
 
-The engine is being designed around a modular approach, separating responsibilities between rendering, asset management, gameplay systems, and multiplayer functionality.
+The engine is being designed around a modular approach, separating responsibilities between rendering, asset management, platformer physics, and multiplayer functionality.
 
 Its conceptual structure includes:
 
 | Component | Purpose |
 |---|---|
 | Core Engine | Main execution flow and system management |
-| Asset Management | Loading and interpreting game resources |
-| Rendering System | Optimized world and object rendering |
-| Gameplay Systems | Player controls and gameplay mechanics |
-| Resource Management | Memory usage and hardware optimization |
-| Multiplayer Layer | Player communication and state synchronization |
-| Gamemode System | Custom multiplayer gameplay experiences |
+| Asset Management | Loading and interpreting levels, textures, and sound resources |
+| Rendering System | Optimized 3D level geometry and character rendering |
+| Gameplay Systems | Player controls, jump physics, collision, and enemy behavior |
+| Resource Management | RAM usage and texture streaming optimization |
+| Multiplayer Layer | Local ad-hoc communication and state synchronization |
+| Gamemode System | Custom multiplayer modes and park challenge mechanics |
 
 These components represent the project's architectural direction and may evolve as development progresses.
 
-## Multiplayer — SA-MP Inspired
+## Multiplayer — Experimental Co-op & Tag
 
-One of the most ambitious aspects of the project is the development of an experimental multiplayer system inspired by **San Andreas Multiplayer (SA-MP)**.
+One of the most ambitious aspects of the project is the development of an experimental ad-hoc multiplayer system designed specifically for *Woody Portable*.
 
-The objective is to create an environment where multiple PSP players can interact inside the same game world, with support for custom gamemodes and shared gameplay mechanics.
+The objective is to create an environment where multiple PSP players can interact inside the amusement park levels, with support for custom mini-games, tag, and shared exploration.
 
 ### First Multiplayer Milestone
 
-An initial **Freeroam gamemode** has already been implemented and experimentally tested using two physical PSP-3000 consoles.
+An initial **Park Freeroam / Tag gamemode** has already been implemented and experimentally tested using two physical PSP-3000 consoles.
 
-These tests represent an important step toward validating the multiplayer concept on original hardware.
+These tests represent an important step toward validating local multiplayer connectivity on original hardware.
 
 However, several technical challenges remain under investigation, including:
 
-- Network communication and connection stability.
-- Player movement and state synchronization.
-- Latency management.
-- Resource usage during multiplayer sessions.
-- Rendering performance with multiple active players.
-- Multiplayer limitations imposed by the PSP hardware.
+- Network communication and ad-hoc connection stability.
+- Character movement and animation state synchronization.
+- Latency management during fast-paced platforming.
+- Memory overhead during multi-character sessions.
+- Rendering performance with multiple active player models on screen.
+- Hardware limitations of the PSP Wi-Fi module.
 
-The multiplayer implementation is still experimental. Broader online connectivity, scalability, and public server support have not yet been established.
+The multiplayer implementation is still experimental. Broader features, scalability, and extended server support have not yet been fully established.
 
 ## Rendering and Performance
 
-The PSP has significant hardware constraints compared to the platforms originally targeted by GTA: San Andreas.
+The PSP has distinct hardware constraints compared to home consoles and PCs of the era.
 
-As a result, the engine prioritizes performance-oriented development rather than direct reproduction of every original system.
+As a result, the engine prioritizes performance-oriented development rather than unoptimized direct asset rendering.
 
 The research and development scope includes:
 
-- Efficient asset loading and memory allocation.
-- Visibility-based rendering optimizations.
-- Reduced rendering overhead.
-- Resource streaming strategies.
-- Optimized scene management.
-- Balancing visual fidelity and gameplay performance.
+- Efficient level segment loading and VRAM allocation.
+- Frustum culling and visibility-based optimizations.
+- Dynamic texture compression and mipmapping.
+- Custom collision detection algorithms optimized for 3D platforming.
+- Balancing visual fidelity with a stable performance target.
 
-The ultimate objective is to maintain responsive gameplay while preserving the essential characteristics of an open-world experience.
-
+The ultimate objective is to maintain responsive controls and smooth platforming while preserving the charming aesthetic of Buzz Park.
 
 ## Project Scope
 
-This project is **not intended to be a complete story-mode port of GTA: San Andreas**.
+This project is **an independent technical engine experiment**.
 
-Instead, it focuses on creating a technical foundation for open-world gameplay, asset compatibility, and multiplayer experimentation.
+It focuses on creating a solid foundation for 3D platforming, asset compatibility, and homebrew experimentation on the PSP.
 
-It is also an independent fan-made technical project and is not affiliated with or endorsed by Rockstar Games, Take-Two Interactive, or Sony Interactive Entertainment.
+It is an independent fan-made project and is not affiliated with, endorsed by, or associated with Universal Interactive, Konami, NBCUniversal, or Sony Interactive Entertainment.
 
-Grand Theft Auto, San Andreas, PlayStation, and PSP are trademarks of their respective owners.
+*Woody Woodpecker*, *Escape from Buzz Park*, PlayStation, and PSP are trademarks of their respective owners.
 
 The project does not include or authorize the distribution of copyrighted commercial game assets or game ISOs.
 
@@ -119,9 +116,9 @@ The project does not include or authorize the distribution of copyrighted commer
 
 After approximately six months of development, the project has progressed from an experimental concept to a playable native PSP engine prototype.
 
-The successful testing of a Freeroam multiplayer gamemode on two physical PSP-3000 systems is one of its most significant milestones so far.
+The successful testing of a Freeroam park gamemode on two physical PSP-3000 systems is one of its most significant milestones so far.
 
-There is still considerable engineering work ahead, particularly in graphics, optimization, gameplay mechanics, and multiplayer synchronization.
+There is still considerable engineering work ahead, particularly in physics tuning, graphics optimization, audio decoding, and multiplayer synchronization.
 
 Nevertheless, the initial results demonstrate the technical potential of the approach.
 
@@ -129,8 +126,8 @@ Nevertheless, the initial results demonstrate the technical potential of the app
 
 # COMING SOON
 
-**A new open-world experiment on the original PlayStation Portable.**
+**A new open-world platforming experiment on the original PlayStation Portable.**
 
-*Built for real hardware. Driven by experimentation. Inspired by San Andreas.*
+*Built for real hardware. Driven by experimentation. Inspired by Woody Woodpecker.*
 
 **Development is ongoing. Stay tuned for future updates, gameplay demonstrations, and technical milestones.**
