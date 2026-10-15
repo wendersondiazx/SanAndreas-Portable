@@ -4,7 +4,6 @@
 
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-PSP-blue?style=for-the-badge)
-![Multiplayer](https://img.shields.io/badge/Multiplayer-Experimental-purple?style=for-the-badge)
 ![Build](https://img.shields.io/badge/Build-Prototype-green?style=for-the-badge)
 
 ---
@@ -26,7 +25,7 @@ Inspired by custom homebrew engine adaptations, the engine follows a modular log
 
 Unlike traditional full-game ports, this project does not aim to reproduce the complete original storyline or full cinematic sequences immediately.
 
-Instead, its primary objective is to develop a specialized engine capable of loading level assets, implementing physics and platformer mechanics, and delivering a smooth, playable experience while respecting the PSP's hardware constraints.
+Instead, its primary objective is to develop a specialized engine capable of loading level assets, implementing physics and platformer mechanics, and delivering a smooth, playable single-player experience while respecting the PSP's hardware constraints.
 
 The project has been under development for approximately **six months** and has recently reached an important milestone: **a stable, playable experimental build**.
 
@@ -36,16 +35,15 @@ The goal is not simply to make *Escape from Buzz Park* run on a PSP.
 
 The goal is to explore how far the original hardware can be pushed through careful software engineering, efficient memory management, and optimized rendering techniques tailored for 3D platformers.
 
-The project focuses on four main areas:
+The project focuses on three main areas:
 
 - **Native execution:** Running directly on real PSP hardware without relying on external emulation.
 - **Asset compatibility:** Investigating methods for loading, interpreting, and adapting 3D meshes, textures, and animations.
-- **Rendering optimization:** Developing efficient rendering and resource-management techniques suitable for the PSP hardware.
-- **Multiplayer experimentation:** Building an experimental multiplayer mode for mini-games and co-op exploration.
+- **Rendering & physics optimization:** Developing efficient rendering, collision detection, and resource-management techniques suitable for the PSP hardware.
 
 ## Engine Architecture
 
-The engine is being designed around a modular approach, separating responsibilities between rendering, asset management, platformer physics, and multiplayer functionality.
+The engine is being designed around a modular approach, separating responsibilities between rendering, asset management, and platformer physics.
 
 Its conceptual structure includes:
 
@@ -56,33 +54,8 @@ Its conceptual structure includes:
 | Rendering System | Optimized 3D level geometry and character rendering |
 | Gameplay Systems | Player controls, jump physics, collision, and enemy behavior |
 | Resource Management | RAM usage and texture streaming optimization |
-| Multiplayer Layer | Local ad-hoc communication and state synchronization |
-| Gamemode System | Custom multiplayer modes and park challenge mechanics |
 
 These components represent the project's architectural direction and may evolve as development progresses.
-
-## Multiplayer — Experimental Co-op & Tag
-
-One of the most ambitious aspects of the project is the development of an experimental ad-hoc multiplayer system designed specifically for *Woody Portable*.
-
-The objective is to create an environment where multiple PSP players can interact inside the amusement park levels, with support for custom mini-games, tag, and shared exploration.
-
-### First Multiplayer Milestone
-
-An initial **Park Freeroam / Tag gamemode** has already been implemented and experimentally tested using two physical PSP-3000 consoles.
-
-These tests represent an important step toward validating local multiplayer connectivity on original hardware.
-
-However, several technical challenges remain under investigation, including:
-
-- Network communication and ad-hoc connection stability.
-- Character movement and animation state synchronization.
-- Latency management during fast-paced platforming.
-- Memory overhead during multi-character sessions.
-- Rendering performance with multiple active player models on screen.
-- Hardware limitations of the PSP Wi-Fi module.
-
-The multiplayer implementation is still experimental. Broader features, scalability, and extended server support have not yet been fully established.
 
 ## Rendering and Performance
 
@@ -116,9 +89,9 @@ The project does not include or authorize the distribution of copyrighted commer
 
 After approximately six months of development, the project has progressed from an experimental concept to a playable native PSP engine prototype.
 
-The successful testing of a Freeroam park gamemode on two physical PSP-3000 systems is one of its most significant milestones so far.
+The successful execution of level rendering, character controls, and platforming physics on physical PSP hardware is one of its most significant milestones so far.
 
-There is still considerable engineering work ahead, particularly in physics tuning, graphics optimization, audio decoding, and multiplayer synchronization.
+There is still considerable engineering work ahead, particularly in physics tuning, graphics optimization, and audio decoding.
 
 Nevertheless, the initial results demonstrate the technical potential of the approach.
 
@@ -126,7 +99,7 @@ Nevertheless, the initial results demonstrate the technical potential of the app
 
 # COMING SOON
 
-**A new open-world platforming experiment on the original PlayStation Portable.**
+**A new 3D platforming experiment on the original PlayStation Portable.**
 
 *Built for real hardware. Driven by experimentation. Inspired by Woody Woodpecker.*
 
