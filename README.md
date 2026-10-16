@@ -1,6 +1,7 @@
 # Woody Portable — PSP Native Engine
 
-**An experimental native game engine bringing the mechanics and 3D platforming experience of Woody Woodpecker: Escape from Buzz Park to the PlayStation Portable.**
+**An experimental native game engine bringing the mechanics and 3D platforming experience of Woody Woodpecker: Escape from Buzz Buzzard Park
+ to the PlayStation Portable.**
 
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-PSP-blue?style=for-the-badge)
