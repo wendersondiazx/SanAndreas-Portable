@@ -20,7 +20,7 @@
 
 ## Overview
 
-**Woody Portable** is an independent experimental project focused on developing a native game engine capable of recreating the core 3D platforming mechanics, level structure, and gameplay experience of *Woody Woodpecker: Escape from Buzz Park* on original PlayStation Portable hardware.
+**Woody Portable** is an independent experimental project focused on developing a native game engine capable of recreating the core 3D platforming mechanics, level structure, and gameplay experience of *Woody Woodpecker: Escape from Buzz Buzzard Park* on original PlayStation Portable hardware.
 
 Inspired by custom homebrew engine adaptations, the engine follows a modular logical structure, using original game assets as a foundation for adapting and executing custom gameplay systems.
 
